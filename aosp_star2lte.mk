@@ -7,4 +7,9 @@ $(call inherit-product, device/samsung/star2lte/full_star2lte.mk)
 $(call inherit-product, vendor/aosp/config/common.mk)
 $(call inherit-product, vendor/aosp/config/telephony.mk)
 
+BUILD_FINGERPRINT := samsung/star2ltexx/star2lte:8.0.0/R16NW/G965FXXU1ARCC:user/release-keys
+
+ PRODUCT_BUILD_PROP_OVERRIDES += \
+        PRIVATE_BUILD_DESC="star2ltexx-user 8.0.0 R16NW G965FXXU1ARCC release-keys"
+
 PRODUCT_NAME := aosp_star2lte
